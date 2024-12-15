@@ -1,0 +1,19 @@
+<div>
+    <h1>Welcome to Design It For Me AI </h1>
+</div>
+
+<br>
+
+<div>
+    <h2>Train-Test Dataset </h2>
+    <form method="post">
+        {% csrf_token %}
+       Train-Testing Dataset : <input type="text" name="inputData">
+        <button type="submit">Start Training</button>
+    </form>
+</div>
+
+<div>
+    <h2>Generated Data</h2>
+    <p>{{generatedData}}</p>
+</div>
